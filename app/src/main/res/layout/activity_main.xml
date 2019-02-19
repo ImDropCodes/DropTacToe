@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/main_text_lly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/nunito_bold"
+            android:gravity="center"
+            android:text="@string/drop"
+            android:textColor="?attr/TextEnable"
+            android:textSize="38sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/nunito_bold"
+            android:gravity="center"
+            android:text="@string/tac"
+            android:textColor="?attr/TextDisable"
+            android:textSize="38sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/nunito_bold"
+            android:gravity="center"
+            android:text="@string/toe"
+            android:textColor="?attr/TextDisable"
+            android:textSize="38sp" />
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/main_app_logo_img"
+        android:src="@drawable/drop_tac_toe_logo_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="194dp" />
+
+    <Button
+        android:id="@+id/btn_single_player"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/main_button_bg"
+        android:elevation="10dp"
+        android:onClick="SinglePlayer"
+        android:text="@string/single_player"
+        android:textColor="?attr/backgroundColor"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_multi_player"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/main_button_bg"
+        android:elevation="10dp"
+        android:onClick="MultiPlayer"
+        android:text="@string/multi_player"
+        android:textColor="?attr/backgroundColor"
+        android:textSize="14sp" />
+
+
+    <Button
+        android:id="@+id/main_settings"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ic_outline_settings_24px"
+        android:elevation="10dp"
+        android:layout_gravity="end|bottom"
+        android:onClick="Settings" />
+
+</LinearLayout>

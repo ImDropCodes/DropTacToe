@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="dark">
+
+        <attr name="backgroundColor" format="color"/>
+        <attr name="buttonColor" format="color"/>
+        <attr name="buttonEnable" format="color"/>
+        <attr name="buttonDisable" format="color"/>
+        <attr name="TextEnable" format="color"/>
+        <attr name="TextDisable" format="color"/>
+        <attr name="VSColor" format="color"/>
+
+    </declare-styleable>
+</resources>

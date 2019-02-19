@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MultiPlayer.MultiPlayerBoard">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/backgroundColor"
+        android:fontFamily="@font/nunito_bold"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="?attr/buttonDisable"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/match_count_multi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/match_count_multi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="5dp"
+        android:background="?attr/backgroundColor"
+        android:fontFamily="@font/nunito_semibold"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="Match Left: 3"
+        android:textColor="?attr/VSColor"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="?attr/backgroundColor"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/player_1_score_multi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/nunito_bold"
+            android:padding="10dp"
+            android:text="0"
+            android:textColor="?attr/VSColor"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/player_1_btn_m"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/button_bg_left_curv_enable"
+            android:fontFamily="@font/nunito"
+            android:text="@string/player1_x"
+            android:textColor="?attr/backgroundColor" />
+
+        <Button
+            android:id="@+id/player_2_btn_m"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/button_bg_right_curv_disable"
+            android:fontFamily="@font/nunito"
+            android:text="@string/player2_o"
+            android:textColor="?attr/backgroundColor" />
+
+        <TextView
+            android:id="@+id/player_2_score_multi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/nunito_bold"
+            android:padding="10dp"
+            android:text="0"
+            android:textColor="?attr/VSColor"
+            android:textSize="24sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/multi_player_vs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="VS"
+        android:textAllCaps="true"
+        android:textColor="?attr/VSColor"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="475dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/backgroundColor">
+
+            <Button
+                android:id="@+id/button_1_m"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="?attr/buttonDisable"
+                android:fontFamily="@font/nunito_bold"
+                android:onClick="GameClick"
+                android:textColor="?attr/backgroundColor"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/button_2_m"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="?attr/buttonDisable"
+                android:fontFamily="@font/nunito_bold"
+                android:onClick="GameClick"
+                android:textColor="?attr/backgroundColor"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/button_3_m"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="?attr/buttonDisable"
+                android:fontFamily="@font/nunito_bold"
+                android:onClick="GameClick"
+                android:textColor="?attr/backgroundColor"
+                android:textSize="50sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/backgroundColor">
+
+            <Button
+                android:id="@+id/button_4_m"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="?attr/buttonDisable"
+                android:fontFamily="@font/nunito_bold"
+                android:onClick="GameClick"
+                android:textColor="?attr/backgroundColor"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/button_5_m"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="?attr/buttonDisable"
+                android:fontFamily="@font/nunito_bold"
+                android:onClick="GameClick"
+                android:textColor="?attr/backgroundColor"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/button_6_m"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="?attr/buttonDisable"
+                android:fontFamily="@font/nunito_bold"
+                android:onClick="GameClick"
+                android:textColor="?attr/backgroundColor"
+                android:textSize="50sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/backgroundColor">
+
+            <Button
+                android:id="@+id/button_7_m"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="?attr/buttonDisable"
+                android:fontFamily="@font/nunito_bold"
+                android:onClick="GameClick"
+                android:textColor="?attr/backgroundColor"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/button_8_m"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="?attr/buttonDisable"
+                android:fontFamily="@font/nunito_bold"
+                android:onClick="GameClick"
+                android:textColor="?attr/backgroundColor"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/button_9_m"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="?attr/buttonDisable"
+                android:fontFamily="@font/nunito_bold"
+                android:onClick="GameClick"
+                android:textColor="?attr/backgroundColor"
+                android:textSize="50sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

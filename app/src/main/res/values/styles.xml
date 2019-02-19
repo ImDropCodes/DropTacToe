@@ -1,0 +1,74 @@
+<resources>
+
+    <!-- Dark Theme. -->
+    <style name="AppThemeDark" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">#e75110</item>
+        <item name="colorPrimaryDark">#e75110</item>
+        <item name="colorAccent">#e75110</item>
+
+        <item name="backgroundColor">#3e3e3e</item>
+        <item name="buttonColor">#747474</item>
+        <item name="buttonEnable">#e75110</item>
+        <item name="buttonDisable">#747474</item>
+        <item name="TextEnable">#e75110</item>
+        <item name="TextDisable">#747474</item>
+        <item name="VSColor">#ffff</item>
+
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowAnimationStyle">@style/animation</item>
+    </style>
+
+    <!-- Light Theme. -->
+    <style name="AppThemeLight" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">#e75110</item>
+        <item name="colorPrimaryDark">#e75110</item>
+        <item name="colorAccent">#e75110</item>
+
+        <item name="backgroundColor">#FFFFFF</item>
+        <item name="buttonColor">#3e3e3e</item>
+        <item name="buttonEnable">#e75110</item>
+        <item name="buttonDisable">#525050</item>
+        <item name="TextEnable">#e75110</item>
+        <item name="TextDisable">#3e3e3e</item>
+        <item name="VSColor">#000000</item>
+
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowAnimationStyle">@style/animation</item>
+    </style>
+
+    <!-- Splash Dark application theme. -->
+    <style name="SplashDarkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background_dark</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowAnimationStyle">@style/animation</item>
+    </style>
+
+    <!-- Splash Dark application theme. -->
+    <style name="SplashLightTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background_light</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowAnimationStyle">@style/animation</item>
+    </style>
+
+    <style name="animation" parent="@style/Animation.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+</resources>

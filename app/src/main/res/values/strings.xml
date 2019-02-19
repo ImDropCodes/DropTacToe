@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">DropTacToe</string>
+    <string name="drop">Drop</string>
+    <string name="tac">Tac</string>
+    <string name="toe">Toe</string>
+    <string name="game_over">Game Over</string>
+    <string name="single_player">Single Player</string>
+    <string name="multi_player">Multi Player</string>
+    <string name="player1_x">Player1: X</string>
+    <string name="player2_o">Player2: O</string>
+    <string name="you">You</string>
+    <string name="bot">Bot</string>
+    <string name="easy">Easy</string>
+    <string name="hard">Hard</string>
+
+    <string name="about_app">A Simple Hyper Causal Game with best user interface experiences.</string>
+</resources>
